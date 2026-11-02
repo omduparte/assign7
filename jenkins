@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Execute Application') {
             steps {
-                sh 'java -cp hello.java'
+                sh 'java hello'
             }
         }
     }
