@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout Code') {
-            steps {
-                git branch: 'main', url: 'https://github.com/omduparte/assign7.git'
-            }
-        }
         stage('Compile Java Program') {
             steps {
                 sh 'javac hello.java'
